@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>キャンパスマップ - 紹介サイト</title>
+</head>
+<body>
+    <div class="container">
+        <h1>麗澤大学キャンパスマップ</h1>
+        
+        <div class="description">
+            <h2>このマップを作った背景と目的</h2>
+            <p>
+                既存の麗澤大学のキャンパスマップではパッと見ただけではどの建物がどこにあるのかわからず迷ってしまう学生が居たり、建物の位置が実際とはずれていたり説明と建物がバラバラで表示されていて見づらい、建物によっては説明すらないという問題があった。<br>
+                そこで、より直感的に操作でき、自分がどこにいて目的地がどこにあるのかが一目でわかるような新しいキャンパスマップを麗澤大学や付属の中高が気になっている学生、麗澤大学のOB・OG、現役の麗澤大学生を主なターゲットとして制作した。
+            </p>
+            <h2>このマップの説明</h2>
+            <p>
+                麗澤大学・付属中高のほぼすべての建物を3Dポリゴンで表示し、各施設を実際の写真を使ったマーカーで表示しどの施設がどこにあるのかを分かりやすくしている。<br>
+                また、過去の麗澤大学付近のマップを表示して過去と現在の敷地、建物の違いを見ることができる。<br>
+                現在地から正門までの最短経路を表示する機能もあり、初めて麗澤大学に来た人でも迷わず正門まで行くことができる。<br>
+                さらに、建物のジャンルごとに絞り込んだり、建物名で検索したり、マーカーをクリックすることで建物の詳細情報を表示したりすることができる。<br>
+            </p>
+        </div>
+
+        <div class="iframe-container">
+            <iframe 
+                src="https://yoshi615.github.io/OpenCampusMap/?v=1.0"
+                title="キャンパスマップ"
+                loading="lazy"
+                allow="geolocation"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>使用データの内容・出典</h3>
+                <ol>
+                    <li>麗澤大学の建物の座標データ<br>
+                        ( <a rel="noopener" target="_blank" href="https://www.google.co.jp/maps/@35.8327739,139.9540037,758m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D">Google Maps</a> )</li>
+                    <li>麗澤大学・付属中高の建物・施設の写真</li>
+                    <li>麗澤大学の各施設の説明<br>
+                        ( 麗澤大学 大学入試・広報課 )</li>
+                    <li>麗澤大学の過去のマップデータ<br>
+                        ( <a rel="noopener" target="_blank" href="https://www.gsi.go.jp/top.html">国土地理院</a> , <a rel="noopener" target="_blank" href="https://www.google.co.jp/maps/@35.8327739,139.9540037,758m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D">Google Maps</a> )</li>
+
+                </ol>
+            </div>
+            <div class="feature-card">
+                <h3>制作方法</h3>
+                <p>
+                    使用したツール：
+                    <ul>
+                        <li>VScode</li>
+                        <li>Git</li>
+                        <li>Github</li>
+                        <li>Github Copilot</li>
+                        <li>Google Maps</li>
+                        <li>Google Spread Sheets</li>
+                        <li>maplibre-gl.js</li>
+                        <li>あっしゅくま</li>
+                        <li>OSRM</li>
+                    </ul>
+                    工夫点：
+                    <ul>
+                        <li>最初のマップの読み込みが遅かったため写真データ全てのデータ量を半分削減し、読み込み速度を改善した。</li>
+                        <li>毎回ウェブで開くのが面倒な人向けにマップをPWA（Progressive Web App）化した。</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="link-section">
+            <h3>Campus Map</h3>
+            <p>使ってみてね！</p>
+            <a href="https://yoshi615.github.io/OpenCampusMap/?v=1.0" target="_blank" class="external-link">
+                サイトを開く
+            </a>
+        </div>
+    </div>
+</body>
+</html>
