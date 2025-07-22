@@ -84,26 +84,28 @@ iframe {
     border-radius: 5px;
     margin: 10px;
     transition: background-color 0.3s;
+    position: relative;
+    top: -100px;
+    left: 148px;
+}
+
+.arrow {
+    width: 118px;
+    height: 80px;
+    position: relative;
+    top: -137px;
+    left: 130px;
+    transform: rotate(13deg);
+}
+
+.QR {
+    width: 180px;
+    height: auto;
+    position: relative;
+    left: 128px;
+    top: 1px;
 }
 
 .external-link:hover {
     background: #0056b3;
-}
-
-/* .highlight {
-    color:#007bff;
-    font-weight: bold;
-
-} */
-
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-    .container {
-        padding: 15px;
-    }
-    .iframe-container {
-        height: 400px;
-    }
 }
